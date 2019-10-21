@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<button onclick="hello()">click</button>
+</body>
+<script>
+function hello() {
+	var employee={ "name":"siri sirisha","street":"vijayadurga","phone":"7330000000"};
+	var jsonstring=JSON.stringify(employee);
+	document.write("json string:" +jsonstring);
+	var jsonobject=JSON.parse(jsonstring);
+	var info='<ul><li> Name:'+jsonobject.name+'</li><li>Street:'+jsonobject.street+'</li><li>Phone:'+jsonobject.phone+'</li></ul>';
+	document.write(info);
+
+
+	// body...
+}
+</script>
+</html>
